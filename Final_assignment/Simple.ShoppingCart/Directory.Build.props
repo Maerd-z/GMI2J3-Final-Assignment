@@ -1,0 +1,13 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<!--
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('$(MSBuildThisFile)', '$(MSBuildThisFileDirectory)../'))" />
+-->
+  <PropertyGroup>
+    <Acme-Drive Condition="'$(Acme-Drive)' == ''">C:</Acme-Drive>
+    <Acme-BuildDir Condition="'$(Acme-BuildDir)' == ''">$(Acme-Drive)\build\</Acme-BuildDir>
+
+    <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(Acme-BuildDir)$(MSBuildProjectName)\bin\</BaseOutputPath>
+    <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)' == ''">$(Acme-BuildDir)$(MSBuildProjectName)\obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+	  <TargetFrameworks>net6.0</TargetFrameworks>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Windsor" Version="5.0.0" />
+    <PackageReference Include="Colorful.Console" Version="1.2.15" />
+	<PackageReference Include="Figgle" Version="0.5.1" />
+	 <PackageReference Include="Autofac" Version="7.0.1" />
+  </ItemGroup>
+
+</Project>
